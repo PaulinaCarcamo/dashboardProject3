@@ -1,0 +1,140 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: powderblue;
+    padding: 20px;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 10px;
+    background: lightgoldenrodyellow;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+    background: lightgray;
+}
+
+/* @media screen and (max-width: 600px) {
+    .topnav .search-container {
+        float: none;
+    }
+
+    .topnav a,
+    .topnav input[type=text],
+    .topnav .search-container button {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+
+    .topnav input[type=text] {
+        border: 1px solid grey;
+    }
+} */
+
+.sidebar {
+    width: 200px;
+    background-color: powderblue;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a.active {
+    background-color: lightgoldenrodyellow;
+    color: black;
+}
+
+.sidebar a:hover:not(.active) {
+    background-color: lightgrey;
+    color: white;
+}
+
+.content {
+    margin-left: 220px;
+}
+
+/* @media screen and (max-width: 700px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .sidebar a {
+        float: left;
+    }
+
+    div.content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+} */
+
+.item1 {
+    grid-area: barchart;
+}
+
+.item2 {
+    grid-area: picture;
+}
+
+.item3 {
+    grid-area: piechart;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        'barchart barchart barchart'
+        'picture piechart piechart';
+    gap: 10px;
+    background-color: powderblue;
+    padding: 10px;
+}
+
+.grid-container div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 50px;
+}
+
+.footer {
+    padding: 20px;
+    background-color: powderblue;
+    color: black;
+    text-align: center;
+}
