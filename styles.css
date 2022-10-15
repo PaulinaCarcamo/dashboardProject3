@@ -1,12 +1,17 @@
 body {
     font-family: "Lato", sans-serif;
+    background-color:rgb(233, 233, 233);
 }
 
 .topnav {
     overflow: hidden;
-    background-color: powderblue;
+    background-color: white;
     padding: 20px;
+    box-shadow: lightgrey 0px 3px 8px;
+    border-radius: 5px;
 }
+
+
 
 .topnav .search-container {
     float: right;
@@ -14,17 +19,22 @@ body {
 
 .topnav input[type=text] {
     padding: 10px;
-    font-size: 20px;
+    font-size: 15px;
     border: none;
+    box-shadow: lightgray 0px 1px 4px;
+    border-radius: 5px;
 }
 
 .topnav .search-container button {
     float: right;
     padding: 10px;
-    background: lightgoldenrodyellow;
-    font-size: 20px;
-    border: none;
+    margin: 0px 10px 0px 10px;
+    background: rgb(143, 162, 182);
+    font-size: 15px;
     cursor: pointer;
+    border: none;
+    box-shadow: lightgray 0px 1px 4px;
+    border-radius: 5px;
 }
 
 .topnav .search-container button:hover {
@@ -54,10 +64,12 @@ body {
 
 .sidebar {
     width: 200px;
-    background-color: powderblue;
+    background-color: white;
     position: fixed;
     height: 100%;
     overflow: auto;
+    box-shadow: lightgrey 0px 3px 8px;
+    border-radius: 5px;
 }
 
 .sidebar a {
@@ -68,7 +80,7 @@ body {
 }
 
 .sidebar a.active {
-    background-color: lightgoldenrodyellow;
+    background-color: rgb(143, 162, 182);;
     color: black;
 }
 
@@ -109,7 +121,7 @@ body {
 }
 
 .item2 {
-    grid-area: picture;
+    grid-area: randomchart;
 }
 
 .item3 {
@@ -120,21 +132,25 @@ body {
     display: grid;
     grid-template-areas:
         'barchart barchart barchart'
-        'picture piechart piechart';
-    gap: 10px;
-    background-color: powderblue;
+        'randomchart piechart piechart';
+    gap: 20px;
     padding: 10px;
+    border-radius: 5px;
 }
 
 .grid-container div {
     background-color: rgba(255, 255, 255, 0.8);
     text-align: center;
     padding: 50px;
+    border-radius: 5px;
+    box-shadow: lightgrey 0px 3px 8px;
 }
 
 .footer {
     padding: 20px;
-    background-color: powderblue;
+    background-color: white;
     color: black;
     text-align: center;
+    box-shadow: lightgrey 0px 3px 8px;
+    border-radius: 5px;
 }
