@@ -1,5 +1,4 @@
-
-var employeeName = [], employeeSalary = []
+let employeeName = [], employeeSalary = []
 
 async function salaryChart() {
   await getSalary()
@@ -29,6 +28,7 @@ salaryChart()
 
 async function getSalary() {
   // const apiUrl = "http://dummy.restapiexample.com/api/v1/employees"
+  //Api json file, too many requests
   const apiData = "./apiData.json"
 
   const response = await fetch(apiData)

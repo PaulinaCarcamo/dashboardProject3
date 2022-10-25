@@ -1,5 +1,4 @@
-
-var employeeName = [], employeeAge = []
+let employeeName = [], employeeAge = []
 
 async function ageChart() {
   await getAge()

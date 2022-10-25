@@ -1,0 +1,1 @@
+let employeeName = [], employeeSalary = [], employeeAge = []
