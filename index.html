@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <link rel="stylesheet" href="/styles.css">
     <title>Dashboard</title>
 
@@ -25,7 +26,7 @@
             <div class="search-container">
                 <form>
                     <input type="text" placeholder="Search.." name="search">
-                    <button type="submit">search</button>
+                    <button type="submit">&#x2794;</button>
                 </form>
             </div>
         </div>
@@ -34,19 +35,20 @@
 
         <div class="grid-container">
             <div class="item1">
-                <h5>Employees Data: Salary and Age</h5>
-                <canvas id="employees"></canvas>
-                <script src="./employees.js"></script>
+                <h5>Employees Salary</h5>
+                <canvas id="chart1"></canvas>
             </div>
             <div class="item2">
-                <h5>The Highest Salaries</h5>
-                <canvas id="bestSalary"></canvas>
-                <script src="./bestSalary.js"></script>
+                <h5>Employees Age</h5>
+                <canvas id="chart2"></canvas>
             </div>
             <div class="item3">
                 <h5>The Youngest Employees</h5>
-                <canvas id="youngestEmployees"></canvas>
-                <script src="./youngest.js"></script>
+                <canvas id="chart3"></canvas>
+            </div>
+            <div class="item4">
+                <h5>The Highest Salaries</h5>
+                <canvas id="chart4"></canvas>
             </div>
         </div>
 

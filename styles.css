@@ -39,27 +39,6 @@ body {
     background: lightgray;
 }
 
-/* @media screen and (max-width: 600px) {
-    .topnav .search-container {
-        float: none;
-    }
-
-    .topnav a,
-    .topnav input[type=text],
-    .topnav .search-container button {
-        float: none;
-        display: block;
-        text-align: left;
-        width: 100%;
-        margin: 0;
-        padding: 14px;
-    }
-
-    .topnav input[type=text] {
-        border: 1px solid grey;
-    }
-} */
-
 .sidebar {
     width: 200px;
     background-color: white;
@@ -91,46 +70,28 @@ body {
     margin-left: 220px;
 }
 
-/* @media screen and (max-width: 700px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-    }
-
-    .sidebar a {
-        float: left;
-    }
-
-    div.content {
-        margin-left: 0;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .sidebar a {
-        text-align: center;
-        float: none;
-    }
-} */
-
 .item1 {
-    grid-area: barchart;
+    grid-area: chart1;
 }
 
 .item2 {
-    grid-area: randomchart;
+    grid-area: chart2;
 }
 
 .item3 {
-    grid-area: piechart;
+    grid-area: chart3;
+}
+
+.item4 {
+    grid-area: chart4;
 }
 
 .grid-container {
     display: grid;
     grid-template-areas:
-        'barchart barchart barchart'
-        'randomchart piechart piechart';
+        'chart1 chart1'
+        'chart2 chart3'
+        'chart4 chart4';
     gap: 20px;
     padding: 10px;
     border-radius: 5px;
