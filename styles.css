@@ -3,22 +3,19 @@ body {
     background-color: rgb(233, 233, 233);
 }
 
-h2,
-h3 {
-    text-align: center;
-}
-
 p,
+h2,
+h3,
 h4 {
     text-align: justify;
-    margin: 2vh;
+    margin: 20px;
 }
 
 .topnav {
     overflow: hidden;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 20px;
-    box-shadow: lightgrey 0px 3px 8px;
+    box-shadow: rgb(211, 211, 211) 0px 3px 8px;
     border-radius: 5px;
 }
 
@@ -30,7 +27,7 @@ h4 {
     padding: 10px;
     font-size: 15px;
     border: none;
-    box-shadow: lightgray 0px 1px 4px;
+    box-shadow: rgb(211, 211, 211) 0px 1px 4px;
     border-radius: 5px;
 }
 
@@ -42,41 +39,40 @@ h4 {
     font-size: 15px;
     cursor: pointer;
     border: none;
-    box-shadow: lightgray 0px 1px 4px;
+    box-shadow: rgb(211, 211, 211) 0px 1px 4px;
     border-radius: 5px;
 }
 
 .topnav .search-container button:hover {
-    background: lightgray;
+    background: rgb(211, 211, 211);
 }
 
 .sidebar {
     width: 200px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     position: fixed;
     height: 100%;
     overflow: auto;
-    box-shadow: lightgrey 0px 3px 8px;
+    box-shadow: rgb(211, 211, 211) 0px 3px 8px;
     border-radius: 5px;
 
 }
 
 .sidebar a {
     display: block;
-    color: black;
+    color: rgb(0, 0, 0);
     padding: 16px;
     text-decoration: none;
 }
 
 .sidebar a.active {
     background-color: rgb(143, 162, 182);
-    ;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .sidebar a:hover:not(.active) {
-    background-color: lightgrey;
-    color: white;
+    background-color: rgb(211, 211, 211);
+    color: rgb(255, 255, 255);
 }
 
 .content {
@@ -120,17 +116,61 @@ h4 {
     text-align: center;
     padding: 50px;
     border-radius: 5px;
-    box-shadow: lightgrey 0px 3px 8px;
+    box-shadow: rgb(211, 211, 211) 0px 3px 8px;
 }
 
 .footer {
     padding: 20px;
-    background-color: white;
-    color: black;
-    box-shadow: lightgrey 0px 3px 8px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    box-shadow: rgb(211, 211, 211) 0px 3px 8px;
     border-radius: 5px;
 }
 
 .footer p {
     text-align: center;
+}
+
+@media only screen and (max-width: 600px),
+(max-width: 768px),
+(max-width: 992px) {
+    .topnav {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px),
+(max-width: 768px),
+(max-width: 992px) {
+    .sidebar {
+        position: initial;
+        height: 100%;
+        width: 100%;
+        margin-bottom: 10px;
+
+    }
+}
+
+@media only screen and (max-width: 600px),
+(max-width: 768px),
+(max-width: 992px) {
+    .grid-container {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 600px),
+(max-width: 768px),
+(max-width: 992px) {
+    .grid-container div {
+        margin: 20px 0px 20px 0px;
+    }
+}
+
+@media only screen and (max-width: 600px),
+(max-width: 768px),
+(max-width: 992px) {
+    .content {
+        margin-left: 0px;
+    }
 }
