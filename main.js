@@ -4,6 +4,7 @@ import { render as ageChart1 } from '/ageChart1.js'
 import { render as ageChart2 } from '/ageChart2.js'
 import { render as salaryChart1 } from '/salaryChart1.js'
 import { render as salaryChart2 } from '/salaryChart2.js'
+import { render as scatterplot_salary_age } from '/scatterplot_salary_age.js'
 
 
 const name = (await getEmployees()).map(e => e.employee_name);
@@ -32,4 +33,5 @@ salaryChart1('#chart1', name, salary);
 ageChart1('#chart2', name, age);
 ageChart2('#chart3', youngestEmpl, youngestAge);
 salaryChart2('#chart4', highestEmpl, highestSalary);
+scatterplot_salary_age('#chart5', age, salary);
 
