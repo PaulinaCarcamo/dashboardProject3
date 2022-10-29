@@ -1,3 +1,5 @@
+//Gráfico comparativo de sueldos y edades
+
 const render = async (selector, labels, data) => {
     const ctx = document.querySelector(selector).getContext('2d');
 
@@ -6,8 +8,8 @@ const render = async (selector, labels, data) => {
         data: {
             labels,
             datasets: [{
-                label: '(Age, Salary)',
-                backgroundColor: 'tomato',
+                label: 'Edad y Sueldo',
+                backgroundColor: 'rgba(54, 162, 235)',
                 data
             },
             ]

@@ -1,3 +1,5 @@
+//Gráfico de los cinco sueldos más altos
+
 const render = async (selector, labels, data) => {
     const ctx = document.querySelector(selector).getContext('2d');
 
@@ -6,8 +8,8 @@ const render = async (selector, labels, data) => {
         data: {
             labels,
             datasets: [{
-                label: 'The highest salaries',
-                backgroundColor: 'purple',
+                label: 'Sueldo',
+                backgroundColor: 'rgba(255, 159, 64)',
                 data
             },
             ]

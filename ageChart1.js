@@ -1,3 +1,5 @@
+//Gráfico de edades por cada trabajador
+
 const render = async (selector, labels, data) => {
     const ctx = document.querySelector(selector).getContext('2d');
 
@@ -6,9 +8,8 @@ const render = async (selector, labels, data) => {
         data: {
             labels,
             datasets: [{
-                label: 'Employees age',
-                backgroundColor: 'lightblue',
-                hoverBackgroundColor: 'blue',
+                label: 'Edad',
+                backgroundColor: 'rgba(75, 192, 192, 0.5)',
                 data
             },
             ]

@@ -1,11 +1,19 @@
 body {
     font-family: "Lato", sans-serif;
-    background-color:rgb(233, 233, 233);
+    background-color: rgb(233, 233, 233);
 }
 
-h2{
+h2,
+h3 {
     text-align: center;
 }
+
+p,
+h4 {
+    text-align: justify;
+    margin: 2vh;
+}
+
 .topnav {
     overflow: hidden;
     background-color: white;
@@ -50,7 +58,7 @@ h2{
     overflow: auto;
     box-shadow: lightgrey 0px 3px 8px;
     border-radius: 5px;
-    
+
 }
 
 .sidebar a {
@@ -61,7 +69,8 @@ h2{
 }
 
 .sidebar a.active {
-    background-color: rgb(143, 162, 182);;
+    background-color: rgb(143, 162, 182);
+    ;
     color: black;
 }
 
@@ -76,30 +85,23 @@ h2{
 
 .item1 {
     grid-area: chart1;
-    
 }
 
 .item2 {
     grid-area: chart2;
-   
 }
 
 .item3 {
     grid-area: chart3;
-    
 }
 
 .item4 {
     grid-area: chart4;
-    
 }
 
 .item5 {
     grid-area: chart5;
-    
 }
-
-
 
 .grid-container {
     display: grid;
@@ -125,8 +127,10 @@ h2{
     padding: 20px;
     background-color: white;
     color: black;
-    text-align: center;
     box-shadow: lightgrey 0px 3px 8px;
     border-radius: 5px;
 }
 
+.footer p {
+    text-align: center;
+}

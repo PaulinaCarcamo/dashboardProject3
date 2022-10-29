@@ -1,3 +1,5 @@
+//Gráfico de sueldos por cada trabajador
+
 const render = async (selector, labels, data) => {
     const ctx = document.querySelector(selector).getContext('2d');
 
@@ -6,8 +8,8 @@ const render = async (selector, labels, data) => {
         data: {
             labels,
             datasets: [{
-                label: 'Employees salary',
-                backgroundColor: 'blue',
+                label: 'Sueldo',
+                backgroundColor: 'rgba(54, 162, 235, 0.5)',
                 data
             },
             ]

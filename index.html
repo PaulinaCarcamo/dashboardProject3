@@ -5,19 +5,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
     <link rel="stylesheet" href="/styles.css">
-    <title>Human Resources Dashboard</title>
+    <title>Dashboard</title>
 
 </head>
 
 <body>
 
     <div class="sidebar">
-        <a class="active" href="#">Home</a>
-        <a href="#">News</a>
-        <a href="#">Contact</a>
-        <a href="#">About</a>
+        <a class="active" href="#">Inicio</a>
+        <a href="#">Equipo</a>
+        <a href="#">Chat</a>
+        <a href="#">Tareas</a>
+        <a href="#">Documentos</a>
     </div>
 
     <div class="content">
@@ -25,33 +25,35 @@
         <div class="topnav">
             <div class="search-container">
                 <form>
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit">&#x2794;</button>
+                    <input type="text" placeholder="Escriba aquí..." name="search">
+                    <button type="submit">Buscar</button>
                 </form>
             </div>
         </div>
 
-        <h2>Human Resources Dashboard</h2>
+        <h2>Recursos Humanos</h2>
+        <h3>En el siguiente tablero de datos se observan gráficas comparativas referidas a los sueldos y las edades del
+            personal contratado por la empresa.</h3>
 
         <div class="grid-container">
             <div class="item1">
-                <h5>Employees Salary</h5>
+                <h5>Sueldos del Personal</h5>
                 <canvas id="chart1"></canvas>
             </div>
             <div class="item2">
-                <h5>Employees Age</h5>
+                <h5>Edad por Trabajador</h5>
                 <canvas id="chart2"></canvas>
             </div>
             <div class="item3">
-                <h5>The Youngest Employees</h5>
+                <h5>Trabajadores más Jóvenes</h5>
                 <canvas id="chart3"></canvas>
             </div>
             <div class="item4">
-                <h5>The Highest Salaries</h5>
+                <h5>Sueldos más Altos</h5>
                 <canvas id="chart4"></canvas>
             </div>
             <div class="item5">
-                <h5>Salary vs Age Relationship</h5>
+                <h5>Relación Edad y Sueldo</h5>
                 <canvas id="chart5"></canvas>
             </div>
         </div>
@@ -60,12 +62,13 @@
             repellat est facilis explicabo vel quaerat laudantium. Id dolores ipsam ut dolores nihil id autem quidem et
             enim odit. Est quasi eveniet qui libero placeat et quos libero. Eos sint illum aut voluptatem eius aut sunt
             nihil a unde provident et laudantium ipsum et laboriosam earum.</p>
-        <h3>Eos reprehenderit dolores sit sunt maxime eum labore sequi.</h3>
+        <h4>Eos reprehenderit dolores sit sunt maxime eum labore sequi.</h4>
 
         <div class="footer">
             <p>Project N°3: Dashboard | Bootcamp UDD | October 2022</p>
         </div>
 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
         <script src="./main.js" type="module"></script>
 
 </body>
