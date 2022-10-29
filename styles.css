@@ -3,6 +3,9 @@ body {
     background-color:rgb(233, 233, 233);
 }
 
+h2{
+    text-align: center;
+}
 .topnav {
     overflow: hidden;
     background-color: white;
@@ -47,6 +50,7 @@ body {
     overflow: auto;
     box-shadow: lightgrey 0px 3px 8px;
     border-radius: 5px;
+    
 }
 
 .sidebar a {
@@ -72,22 +76,27 @@ body {
 
 .item1 {
     grid-area: chart1;
+    
 }
 
 .item2 {
     grid-area: chart2;
+   
 }
 
 .item3 {
     grid-area: chart3;
+    
 }
 
 .item4 {
     grid-area: chart4;
+    
 }
 
 .item5 {
     grid-area: chart5;
+    
 }
 
 
@@ -120,3 +129,4 @@ body {
     box-shadow: lightgrey 0px 3px 8px;
     border-radius: 5px;
 }
+

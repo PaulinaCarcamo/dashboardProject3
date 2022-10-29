@@ -6,7 +6,7 @@ const render = async (selector, labels, data) => {
         data: {
             labels,
             datasets: [{
-                label: 'The youngest employees',
+                label: 'The Youngest employees',
                 backgroundColor: 'lightgreen',
                 data
             },

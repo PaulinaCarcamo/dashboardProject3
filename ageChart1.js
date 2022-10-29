@@ -8,6 +8,7 @@ const render = async (selector, labels, data) => {
             datasets: [{
                 label: 'Employees age',
                 backgroundColor: 'lightblue',
+                hoverBackgroundColor: 'blue',
                 data
             },
             ]
