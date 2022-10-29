@@ -18,6 +18,6 @@ En este proyecto se utiliza un tipo de API pública que no requiere procesos de 
 
 Visualización del Dashboard:
 
-<img src="images/dashboard-img.png">
+<img src="./dashboard-img.png">
 
 
