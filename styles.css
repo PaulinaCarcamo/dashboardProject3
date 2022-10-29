@@ -86,12 +86,19 @@ body {
     grid-area: chart4;
 }
 
+.item5 {
+    grid-area: chart5;
+}
+
+
+
 .grid-container {
     display: grid;
     grid-template-areas:
         'chart1 chart1'
         'chart2 chart3'
-        'chart4 chart4';
+        'chart4 chart4'
+        'chart5 chart5';
     gap: 20px;
     padding: 10px;
     border-radius: 5px;
